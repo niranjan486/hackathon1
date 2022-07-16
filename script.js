@@ -2,7 +2,7 @@ var breweryContainer=document.getElementById('breweryContainer')
 
  
 
-async function breweryData(url){
+async function breweryData(){
   var breweryName=document.getElementById('breweryName').value
     console.log(breweryName)
     let data=await fetch(`https://api.openbrewerydb.org/breweries/search?query=${breweryName}`)
@@ -32,10 +32,10 @@ async function breweryData(url){
     </div>`
       
 
-    } 
-    catch(err){
-      console.log(err)
-    }
+}
+
+      
+  
       
 
 
